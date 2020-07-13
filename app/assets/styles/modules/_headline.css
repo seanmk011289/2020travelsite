@@ -1,0 +1,48 @@
+.headline {
+    font-weight:900;
+    font-family:"Open Sans", sans-serif;
+    color: $mainBlue;
+    letter-spacing:-1px;
+    font-size:1.4rem;
+    line-height:1.5rem;
+
+    @mixin atMedium {
+        font-size:2.4rem;
+    }
+
+    &--centered {
+        text-align:center;
+    }
+
+    &--orange {
+        color:$mainOrange;
+    }
+
+    &--subtitle {
+        font-size:1rem;
+        font-weight:300;
+        line-height:1.2rem;
+        padding-bottom:2rem;
+        letter-spacing:0;
+
+        @mixin atMedium {
+            font-size:1.5rem;
+            line-height:2rem;
+        }
+
+    }
+
+    &--narrow {
+        max-width: 300px;
+        margin-right:auto;
+        margin-left:auto;
+
+        @mixin atMedium {
+            max-width:400px;
+        }
+    }
+ 
+    &--no-t-margin {
+        margin-top:0px;
+    }
+}

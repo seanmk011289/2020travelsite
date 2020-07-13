@@ -1,0 +1,58 @@
+.large-hero {
+    position:relative;
+    border-bottom: 10px solid $mainBlue;
+
+    &__image {
+       display:block;
+    }
+
+    &__text-content {
+        position:absolute;
+        top:50%;
+        left:0;
+        width:100%;
+        text-align:center;
+        transform:translateY(-50%);
+    }
+
+    &__title {
+        font-weight:900;
+        color:$mainBlue;
+        font-size:2.1rem;
+        letter-spacing: -1px;
+        margin:0;
+
+        @mixin atMedium {
+            font-size:4.8rem;
+            line-height:70px;
+            letter-spacing: -3px;
+        }
+    }
+
+    &__subtitle {
+        font-weight:300;
+        color:$mainBlue;
+        font-size:1rem;
+        text-transform:uppercase;
+        letter-spacing:10px;
+
+        @mixin atMedium {
+            font-size:1.8rem;
+        }
+    }
+
+    &__desc {
+        padding-top:25px;
+        color:white;
+        font-size:1rem;
+        font-weight:100;
+        text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+        max-width:30rem;
+        margin: 0 auto;
+
+        @mixin atMedium {
+            font-size:1.75rem;
+        }
+    }
+
+}
