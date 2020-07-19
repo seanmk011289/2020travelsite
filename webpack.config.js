@@ -21,11 +21,12 @@ module.exports = {
             server._watch('./app/**/*.html')
         },
         contentBase: path.join(__dirname, 'app'),
+        watchContentBase: true,
         hot: true,
         port: 8000,
-        host: '0.0.0.0'
+        host: '0.0.0.0',
     },
-    watch: true,
+    // watch: true,
     //CSS LOADER CODE
     module: {
         rules: [
