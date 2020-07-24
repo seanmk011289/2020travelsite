@@ -5,6 +5,7 @@ const postCSSPlugins = [
     require('postcss-mixins'),
     require('postcss-nested'),
     require('postcss-simple-vars'),
+    require('postcss-hexrgba'),
     require('autoprefixer')
 ]
 
@@ -24,7 +25,7 @@ module.exports = {
         watchContentBase: true,
         hot: true,
         port: 8000,
-        host: '0.0.0.0',
+        host: '0.0.0.0'
     },
     // watch: true,
     //CSS LOADER CODE
