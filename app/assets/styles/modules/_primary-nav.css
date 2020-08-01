@@ -54,6 +54,10 @@
             padding-top:15px;
             font-size:1rem;
             background-color: transparent;
+
+            &.is-current-link {
+                color:#fabb69;
+            }
         }
     }
 }
